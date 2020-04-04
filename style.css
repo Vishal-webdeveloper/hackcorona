@@ -7,7 +7,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	scroll-behavior: smooth;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }
 
 /*----header-----*/
@@ -110,7 +110,8 @@ section h1
 }
 section p
 {
-	font-size: 18px;
+	font-size: 15px;
+	color:rgb(121, 121, 121) ;
 }
 
 /*------Home-------*/
