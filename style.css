@@ -9,6 +9,9 @@
 	scroll-behavior: smooth;
 	font-family: 'Poppins', sans-serif;
 }
+
+/*----header-----*/
+
 header
 {
 	position: fixed;
@@ -20,6 +23,7 @@ header
 	align-items: center;
 	background: rgb(117, 4, 4);
 	z-index: 1000;
+	
 }
 
 header .logo
@@ -59,30 +63,26 @@ header ul li a:hover
 {
 	background: #205aff;
 }
-#home a
-{
-	position: relative;
-	padding: 10px 40px;
-	color:#ddd;
-	display: inline-block;
-	text-decoration: none;
-	cursor: pointer;
-	margin: 20px;
-	background-color:  rgb(117, 4, 4);
-	border-radius: 12px;
-}
-
-#home a.active,
-#home a:hover
-{
-	background:#ddd;
-	color: black;
-	transition: ease-in 0.3s;
-}
-
 .toggle
 {
 	display: none;
+}
+
+#header a
+{
+	display: inline-block;
+	padding: 8px 10px;
+	text-decoration: none;
+	font-size: 18px;
+	background:  rgb(117, 4, 4);
+	color: #ddd;
+	margin-top: 20px;
+}
+#header a.active,
+#header a:hover
+{
+	background: #ddd;
+	color:#000;
 }
 
 
@@ -113,28 +113,39 @@ section p
 	font-size: 18px;
 }
 
-#header a
+/*------Home-------*/
+
+#home a
 {
+	position: relative;
+	padding: 10px 40px;
+	color:#ddd;
 	display: inline-block;
-	padding: 8px 10px;
 	text-decoration: none;
-	font-size: 18px;
-	background:  rgb(117, 4, 4);
-	color: #ddd;
-	margin-top: 20px;
+	cursor: pointer;
+	margin: 20px;
+	background-color:  rgb(117, 4, 4);
+	border-radius: 12px;
 }
-#header a.active,
-#header a:hover
+
+#home a.active,
+#home a:hover
 {
-	background: #ddd;
-	color:#000;
+	background:#ddd;
+	color: black;
+	transition: ease-in 0.3s;
 }
+
+
+
+/*---Team------*/
 
 .team-section{
 	background: #f1f1f1;
 	text-align: center;
   }
-  .inner-width{
+
+.inner-width{
 	max-width: 1200px;
 	margin: auto;
 	padding: 40px;
@@ -192,6 +203,9 @@ section p
 	  width: 100%;
 	}
   }
+
+
+  /*-----Footer----*/
   
   footer {
 	background-color: rgb(41, 37, 37);
@@ -199,6 +213,10 @@ section p
 	text-align: center;
 	color: white;
   }
+
+
+
+  /*-----responsive-----*/
 @media (max-width: 992px)
 {
 	section
@@ -306,4 +324,32 @@ header
 }
 
 
+}
+
+
+
+
+@keyframes fade-in
+{
+	0%
+	{
+		opacity: 0;
+	}
+	100%
+	{
+		opacity: 1;
+	}
+}
+@keyframes left-in
+{
+	0%
+	{
+		transform: translateX(-200px);
+		opacity: 0;
+	}
+	100%
+	{
+		transform: translateX(0px);
+		opacity: 1;
+	}
 }
